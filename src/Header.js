@@ -11,7 +11,7 @@ import './Header.css'
 function Header() {
     return (
         <div className="Header">
-             <header>
+
 
 
  <div className="header__left"> 
@@ -28,7 +28,7 @@ function Header() {
 <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
 </div>
 
-</header>
+
             
         </div>
     )
