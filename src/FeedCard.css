@@ -1,0 +1,8 @@
+.feedcard__head{
+    display:flex;
+    flex-direction: row;
+}
+
+.feedcard__headtext{
+    width: 50%;
+}

@@ -1,0 +1,30 @@
+.feed{
+    display: flex;
+    flex:0.6;
+    flex-direction: column;
+    
+}
+.feed__post{
+ 
+    width: 100%;
+    background-color:white;
+  
+
+}
+.feed__postInput{
+    display: flex;
+
+   
+}
+
+.feed__postInput > input {
+    flex-grow: 1;
+    border-radius: 20px;
+   
+}
+
+.feed__postOptions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
