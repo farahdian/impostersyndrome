@@ -1,39 +1,67 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Roboto', sans-serif;
+}
+header{
+  width:100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row!important;
+  align-content: flex-start;
+  justify-content: space-evenly!important;
+  align-content: center;
+  position: fixed;
+  z-index: 100;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main{
+  padding-top: 50px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+
+.propic{
+  width:60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+#profile-col{
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+
+
 }
 
-.App-header {
-  min-height: 100vh;
+#procard{
+  align-items: center;
+
+  width:fit-content;
+ 
+}
+
+#feed{
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width:30%;
+
+  align-items: flex-start;
+}
+#post{
+  width:100%
+}
+.postcard{
+  width: 100%;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+#misccol{
+  width:25%;
+  margin-top: 5rem;
+  margin-right: 8rem;
+
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+#top{
+  width: fit-content;
 }

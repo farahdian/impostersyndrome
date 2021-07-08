@@ -1,0 +1,14 @@
+.header__right{
+    display: flex;
+
+}
+
+.header__left{
+    align-content: center;
+}
+
+
+#logo{
+    font-size: 40px;
+    color: cornflowerblue;
+}
