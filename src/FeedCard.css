@@ -1,8 +1,46 @@
+.feedcard{
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.6rem;
+}
 .feedcard__head{
     display:flex;
     flex-direction: row;
+    align-items: center;
+   
 }
 
 .feedcard__headtext{
     width: 50%;
+    font-size: 10px;
+    align-items: center;
+    line-height: 0.5px;
+    margin-left: 10px;
+    align-self: center;
+  
+
 }
+
+
+
+.feedcard__headtext > h2{
+    font-size: 15px;
+}
+
+.feedcard__headtext > span {
+    display: flex;
+}
+
+.feedcard__article > img{
+    object-fit: contain;
+    margin:0;
+    padding: 0;
+}
+
+.feedcard__react{
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
