@@ -60,12 +60,12 @@ function Feed() {
             </div>
             <div className="feed__features">
             
-            {posts.map(({id, data:{user, postTime, text}})=>(
+            {posts.map(post=>(
             <FeedCard
-            key={id}
-            user={user}
-            postTime={postTime}
-            text={text}
+            key={post.id}
+            user={post.user}
+            postTime={post.postTime}
+            text={post.text}
             />))
             }
             </div>
