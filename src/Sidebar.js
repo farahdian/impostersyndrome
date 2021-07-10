@@ -7,7 +7,7 @@ function Sidebar() {
     const topics =["hci", "psychology", "art", "programing"]
 
     return (
-        <div clasName="sidebar">
+        <div className="sidebar">
             <div className="sidebar__top">
                 <img src="https://media-exp3.licdn.com/dms/image/C5616AQFQjU7S_CwuNw/profile-displaybackgroundimage-shrink_200_800/0/1603536522883?e=1631145600&v=beta&t=o8NgD7--LA_TPyBc81cVPu8H6UyU2xp-yYiOTNj0gwI" alt="hand in mirror"></img>
          
@@ -15,7 +15,7 @@ function Sidebar() {
           <h6>Farah Dianputri</h6>
 
        
-          <h7>Programming Intern at PeasyAI</h7>
+          <h6>Programming Intern at PeasyAI</h6>
           </div>
 
         
@@ -41,8 +41,8 @@ function Sidebar() {
 
         
             <p>Recent</p>
-            {topics.map(topic =>(
-                    <div className="sidebar__recentItem">
+            {topics.map((topic, index )=>(
+                    <div key={index} className="sidebar__recentItem">
                     <span className="sidebar__hash">#</span><p>{topic}</p>
                     </div> 
             ))}
