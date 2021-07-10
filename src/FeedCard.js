@@ -18,7 +18,7 @@ function FeedCard({id, user, postTime, text,}) {
             </div>
             </div>
             <div className="feedcard__main">
-                <p className="feedcard__content">{text}</p>
+                <p>{text}</p>
             </div>
                  <div className="feedcard__react">
                  <PostOption Icon={ThumbUp} title="Likes"/>

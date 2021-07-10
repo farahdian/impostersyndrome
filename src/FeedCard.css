@@ -39,7 +39,8 @@
 }
 
 .feedcard__react{
-    width: 50%;
+    color: gray;
+
     justify-content: space-evenly;
     display: flex;
 }

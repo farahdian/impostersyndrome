@@ -18,15 +18,16 @@ function Feed() {
     
     
     useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) =>
-    setPosts(
-        snapshot.docs.map((doc) =>({
-        id: doc.id,
-        data: doc.data(),
-        }))
-    )
-    );
-}, []);
+        db.collection("posts").onSnapshot(snapshot => (
+    
+            setPosts(snapshot.docs.map(doc => (
+                {
+                    id: doc.id,
+                    data: doc.data(),
+                }
+            )))
+        ))
+    }, []);
 
 
     const sendPost = (e) =>{
@@ -37,7 +38,7 @@ function Feed() {
             text: input,
         });
     };
-
+    
 
     return (
         <div className="feed">
@@ -55,19 +56,23 @@ function Feed() {
                 </div>
             </div>
             <div className="feed__features">
+
+
             
-            {posts.map(post=>(
-            <FeedCard
-            key={post.id}
-            user={post.user}
-            postTime={post.postTime}
-            text={post.text}
-            />))
+            
+            {posts.map(({id, data: {user, text}}) =>(
+             
+                <FeedCard
+                key={id}
+                user={user}
+                text={text}
+                />
+        ))
             }
             </div>
            
         </div>
-    )
+    );
 }
 
 export default Feed
