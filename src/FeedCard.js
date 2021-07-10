@@ -7,7 +7,7 @@ import SmsIcon from '@material-ui/icons/Sms';
 import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
 
-function FeedCard({id, user, postTime, text, imgSrc, title, subtitle}) {
+function FeedCard({id, user, postTime, text,}) {
     return (
         <div key={id} className="feedcard">
             <div className="feedcard__head">
