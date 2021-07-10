@@ -19,16 +19,7 @@ function FeedCard({id, user, postTime, text, imgSrc, title, subtitle}) {
             </div>
             <div className="feedcard__main">
                 <p className="feedcard__content">{text}</p>
-<<<<<<< HEAD
             </div>
-=======
-                </div>
-                {imgSrc && title && subtitle?<div className="feedcard__article"><img src={imgSrc} alt="post pic"></img>
-                <div className="feedcard__articleinfo">
-                 <h2>{title}</h2>
-                 <p>{subtitle}</p>
-                 </div></div>: <br></br>}
->>>>>>> 58936670275619d4c5dbf3fa3d69068f7dd8276c
                  <div className="feedcard__react">
                  <PostOption Icon={ThumbUp} title="Likes"/>
                  <PostOption Icon={SmsIcon} title="Comment"/>
@@ -36,11 +27,6 @@ function FeedCard({id, user, postTime, text, imgSrc, title, subtitle}) {
                  <PostOption Icon={SendIcon} title="Send"/>
                  </div>
                  
-<<<<<<< HEAD
-=======
-               
-           
->>>>>>> 58936670275619d4c5dbf3fa3d69068f7dd8276c
 
            
             
