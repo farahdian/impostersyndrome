@@ -65,6 +65,8 @@
 }
 
 .sidebar__bottom{
+    top:60px;
+    position: sticky;
     text-align: left;
     padding: 10px;
     border: 1px solid lightgray;

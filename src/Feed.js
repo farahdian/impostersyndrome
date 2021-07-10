@@ -18,7 +18,7 @@ function Feed() {
     
     
     useEffect(() => {
-        db.collection("posts").onSnapshot(snapshot => (
+        db.collection("posts").orderBy("postTime","desc").onSnapshot(snapshot => (
     
             setPosts(snapshot.docs.map(doc => (
                 {
@@ -37,6 +37,7 @@ function Feed() {
             postTime:firebase.firestore.FieldValue.serverTimestamp(),
             text: input,
         });
+        setInput('')
     };
     
 
