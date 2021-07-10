@@ -35,10 +35,6 @@ function Feed() {
             user: "Farah Dianputri",
             postTime:firebase.firestore.FieldValue.serverTimestamp(),
             text: input,
-            imgSrc: "",
-            title: "",
-            subtitle: "",
-
         });
     };
 
