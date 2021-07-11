@@ -10,10 +10,13 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import FeedCard from './FeedCard';
 import { db } from './firebase';
 import firebase from 'firebase';
+import {useSelector} from 'react-redux'
+import {selectUser} from './features/userSlice'
 
 function Feed() {
     const [input, setInput] = useState('');
     const [ posts, setPosts] = useState([]);
+    const user = useSelector(selectUser)
     
     
     
@@ -33,7 +36,7 @@ function Feed() {
     const sendPost = (e) =>{
         e.preventDefault();
         db.collection("posts").add({
-            user: "Farah Dianputri",
+            user: user.displayName,
             postTime:firebase.firestore.FieldValue.serverTimestamp(),
             text: input,
         });

@@ -1,18 +1,20 @@
 import React from 'react';
 import './Sidebar.css';
 import { Avatar } from '@material-ui/core';
-
+import { selectUser } from './features/userSlice';
+import {useSelector} from 'react-redux';
 
 function Sidebar() {
+    const user = useSelector(selectUser)
     const topics =["hci", "psychology", "art", "programing"]
 
     return (
         <div className="sidebar">
             <div className="sidebar__top">
-                <img src="https://media-exp3.licdn.com/dms/image/C5616AQFQjU7S_CwuNw/profile-displaybackgroundimage-shrink_200_800/0/1603536522883?e=1631145600&v=beta&t=o8NgD7--LA_TPyBc81cVPu8H6UyU2xp-yYiOTNj0gwI" alt="hand in mirror"></img>
+                <img src="https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg" alt="mesh gradient"></img>
          
-          < Avatar className="sidebar__avatar"/>
-          <h6>Farah Dianputri</h6>
+          < Avatar className="sidebar__avatar">{user.email[0]}</Avatar>
+          <h6>{user.displayName}</h6>
 
        
           <h6>Programming Intern at PeasyAI</h6>
