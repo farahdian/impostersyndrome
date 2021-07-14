@@ -2,10 +2,12 @@ import React from 'react'
 import { Avatar } from '@material-ui/core'
 import './FeedCard.css'
 import PostOption from './PostOption'
-import { ThumbUp } from '@material-ui/icons'
+import LikeButton from './LikeButton'
+
 import SmsIcon from '@material-ui/icons/Sms';
 import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
+
 
 function FeedCard({id, user, postTime, text,}) {
     return (
@@ -21,10 +23,14 @@ function FeedCard({id, user, postTime, text,}) {
                 <p>{text}</p>
             </div>
                  <div className="feedcard__react">
-                 <PostOption Icon={ThumbUp} title="Likes"/>
+                     <LikeButton />
+
+               
+            
                  <PostOption Icon={SmsIcon} title="Comment"/>
-                 <PostOption Icon={ShareIcon} title="Likes"/>
+                 <PostOption Icon={ShareIcon} title="Share"/>
                  <PostOption Icon={SendIcon} title="Send"/>
+        
                  </div>
                  
 
