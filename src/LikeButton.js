@@ -20,9 +20,9 @@ function LikeButton() {
             <div className="likeButton" onClick={addLike}>
                 { isLiked=== true ? <ThumbUpIcon style={{color:lightBlue[800]}}/>:<ThumbUpIcon/>}
           
-                { count? <p>{count}</p>: "" }
+                { count? <p>{count}</p>:  <h5 className='likeButton__title'>Like</h5>}
              
-                <h5 className='likeButton__title'>Like</h5>
+               
                 
             </div>
         )
