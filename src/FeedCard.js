@@ -9,17 +9,17 @@ import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
 
 
-function FeedCard({id, user, postTime, text,}) {
+function FeedCard({id, user, text, imgSrc}) {
     return (
         <div key={id} className="feedcard">
             <div className="feedcard__head">
             <Avatar />
             <div className="feedcard__headtext">
             <h2>{user}</h2>
-            <p>{postTime}</p>
             </div>
             </div>
             <div className="feedcard__main">
+            {imgSrc? <img src={imgSrc} alt={text}></img>: ""}
                 <p>{text}</p>
             </div>
                  <div className="feedcard__react">

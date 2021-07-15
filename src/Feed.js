@@ -15,8 +15,10 @@ import {selectUser} from './features/userSlice'
 
 function Feed() {
     const [input, setInput] = useState('');
+    const [imgUrl, setImg] = useState('');
     const [ posts, setPosts] = useState([]);
     const user = useSelector(selectUser)
+
     
     
     
@@ -39,9 +41,12 @@ function Feed() {
             user: user.displayName,
             postTime:firebase.firestore.FieldValue.serverTimestamp(),
             text: input,
+            imgSrc: imgUrl,
         });
         setInput('')
+        setImg('')
     };
+
     
 
     return (
@@ -49,7 +54,8 @@ function Feed() {
             <div className="feed__post">
                 <div className="feed__postInput">
                 <Avatar />
-                <input value={input} onChange={e=>setInput(e.target.value)}type="text"></input>
+                <input value={input} onChange={e=>setInput(e.target.value)}type="text" placeholder="Write a post"></input>
+                <input value={imgUrl} onChange={e=>setImg(e.target.value)} type="text" placeholder="Embed an image url"></input>
                 <button type="submit"onClick={sendPost}>Post</button>
                 </div>
                 <div className="feed__postOptions">
@@ -58,18 +64,20 @@ function Feed() {
                 <PostOption Icon={CalendarTodayIcon} title="Event"/>
                 <PostOption Icon={DescriptionIcon}title="Write an article"/>
                 </div>
+                
             </div>
             <div className="feed__features">
 
 
             
             
-            {posts.map(({id, data: {user, text}}) =>(
+            {posts.map(({id, data: {user, text, imgSrc}}) =>(
              
                 <FeedCard
                 key={id}
                 user={user}
                 text={text}
+                imgSrc={imgSrc}
                 />
         ))
             }

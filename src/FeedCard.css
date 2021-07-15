@@ -32,7 +32,8 @@
     display: flex;
 }
 
-.feedcard__article > img{
+.feedcard__main > img{
+    width: 100%;
     object-fit: contain;
     margin:0;
     padding: 0;
