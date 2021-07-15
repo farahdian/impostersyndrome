@@ -17,7 +17,12 @@ function Feed() {
     const [input, setInput] = useState('');
     const [imgUrl, setImg] = useState('');
     const [ posts, setPosts] = useState([]);
+    const [display, setDisplay] = useState(false)
     const user = useSelector(selectUser)
+
+    function toggleDisplay(){
+        setDisplay(prevDisplay => !prevDisplay);
+    }
 
     
     
@@ -55,11 +60,11 @@ function Feed() {
                 <div className="feed__postInput">
                 <Avatar />
                 <input value={input} onChange={e=>setInput(e.target.value)}type="text" placeholder="Write a post"></input>
-                <input value={imgUrl} onChange={e=>setImg(e.target.value)} type="text" placeholder="Embed an image url"></input>
+                {display===true? <input value={imgUrl} onChange={e=>setImg(e.target.value)} type="text" placeholder="Embed an image url"></input>: ""}
                 <button type="submit"onClick={sendPost}>Post</button>
                 </div>
                 <div className="feed__postOptions">
-                <PostOption Icon={PhotoIcon}title="Photo"/>
+                <PostOption Icon={PhotoIcon}title="Photo" onclickact={toggleDisplay}/>
                 <PostOption Icon={YouTubeIcon}title="Video"/>
                 <PostOption Icon={CalendarTodayIcon} title="Event"/>
                 <PostOption Icon={DescriptionIcon}title="Write an article"/>
