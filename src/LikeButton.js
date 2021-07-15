@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './PostOption.css';
+import './LikeButton.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import { lightBlue } from '@material-ui/core/colors';
 

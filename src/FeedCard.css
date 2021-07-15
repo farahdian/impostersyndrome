@@ -22,7 +22,16 @@
 
 }
 
+.feed__postInput > button {
+    border-radius: 30px;
+    border:none;
+    padding: 10px;
+ 
 
+    background-color: cornflowerblue;
+    color: cornsilk;
+
+}
 
 .feedcard__headtext > h2{
     font-size: 15px;

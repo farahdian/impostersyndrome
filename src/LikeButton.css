@@ -1,0 +1,13 @@
+.likeButton{
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.likeButton__title{
+    font-size: 1rem;
+    color: grey;
+}
+
+.likeButton:hover{
+    background-color: whitesmoke;
+
+}

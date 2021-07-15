@@ -5,6 +5,8 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount'
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import SearchIcon from '@material-ui/icons/Search';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Header.css'
 import { auth } from './firebase';
 import {useDispatch} from 'react-redux';
@@ -28,8 +30,8 @@ return (
 
 
  <div className="header__left"> 
-<i id="logo"class="fab fa-linkedin"></i>
-<i class="fas fa-search"></i>
+<LinkedInIcon id="logo"/>
+<SearchIcon id="search"/>
 <input type="text"></input>
 </div>
 

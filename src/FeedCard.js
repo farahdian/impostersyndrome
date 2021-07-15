@@ -19,8 +19,9 @@ function FeedCard({id, user, text, imgSrc}) {
             </div>
             </div>
             <div className="feedcard__main">
+            <p>{text}</p>
             {imgSrc? <img src={imgSrc} alt={text}></img>: ""}
-                <p>{text}</p>
+               
             </div>
                  <div className="feedcard__react">
                      <LikeButton />
