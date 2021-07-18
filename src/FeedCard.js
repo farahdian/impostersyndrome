@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import { Avatar } from '@material-ui/core'
 import './FeedCard.css'
 import PostOption from './PostOption'
@@ -9,9 +9,9 @@ import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
 
 
-function FeedCard({id, user, text, imgSrc}) {
+const FeedCard = forwardRef(({id, user, text, imgSrc}, ref) => {
     return (
-        <div key={id} className="feedcard">
+        <div ref={ref} key={id} className="feedcard">
             <div className="feedcard__head">
             <Avatar />
             <div className="feedcard__headtext">
@@ -39,6 +39,6 @@ function FeedCard({id, user, text, imgSrc}) {
             
         </div>
     )
-}
+})
 
 export default FeedCard

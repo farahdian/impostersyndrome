@@ -17,7 +17,7 @@ function Sidebar() {
           <h6>{user.displayName}</h6>
 
        
-          <h6>Programming Intern at PeasyAI</h6>
+          <h6>{user.email}</h6>
           </div>
 
         

@@ -20,6 +20,7 @@
 .app__body{
   display: flex;
   padding-top: 50px;
+  margin-left: 10%;
 
 }
 
