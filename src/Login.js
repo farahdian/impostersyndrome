@@ -55,7 +55,8 @@ const loginToApp =(e)=>{
 
     return (
         <div className="login">
-          
+
+          <div className="loginForm">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="linkedinlogo"/>
             <h5>Make the most out of your professional life</h5>
             <form>
@@ -68,7 +69,10 @@ const loginToApp =(e)=>{
                 <button type="submit" onClick={loginToApp}>Sign In</button>
             
             </form>
-            <p>Not a Member?<span className="login__register" onClick={register}>Register Now</span></p>
+            <p>Not a Member?<span className="login__register" onClick={register}> Register Now</span></p>
+            </div>
+
+     
         </div>
       
     )

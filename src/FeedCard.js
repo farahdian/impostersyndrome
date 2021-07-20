@@ -21,6 +21,7 @@ const FeedCard = forwardRef(({id, user, text, imgSrc}, ref) => {
             <div className="feedcard__main">
             <p>{text}</p>
             {imgSrc? <img src={imgSrc} alt={text}></img>: ""}
+           
                
             </div>
                  <div className="feedcard__react">

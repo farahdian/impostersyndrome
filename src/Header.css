@@ -11,6 +11,12 @@
     align-content: center;
 }
 
+.header__left>input{
+    width: 60%;
+    border-width: 1px;
+    background-color:whitesmoke;
+}
+
 .header__left > input{
  border-radius: 30px;
  padding-left: 30px;

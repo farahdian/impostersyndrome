@@ -1,5 +1,5 @@
 .likeButton{
-    padding: 0.5rem;
+    padding: 0.2rem;
     border-radius: 10px;
 }
 .likeButton__title{
@@ -9,5 +9,6 @@
 
 .likeButton:hover{
     background-color: whitesmoke;
+    cursor: pointer;
 
 }

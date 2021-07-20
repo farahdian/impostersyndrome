@@ -1,5 +1,5 @@
 .postOption{
-    padding: 0.5rem;
+    padding: 0.2rem;
     border-radius: 10px;
 }
 .postOption__title{
@@ -9,5 +9,6 @@
 
 .postOption:hover{
     background-color: whitesmoke;
+    cursor: pointer;
 
 }

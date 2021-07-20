@@ -41,6 +41,10 @@
     display: flex;
 }
 
+.feedcard__main >p {
+    margin-left: 50px;
+}
+
 .feedcard__main > img{
     width: 100%;
     object-fit: contain;
@@ -50,6 +54,7 @@
 
 .feedcard__react{
     color: gray;
+    align-items: baseline;
 
     justify-content: space-evenly;
     display: flex;
