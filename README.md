@@ -1,3 +1,7 @@
+# LinkedIn Clone
+
+![Screenshot (23)](https://user-images.githubusercontent.com/72678356/127143829-9c350a06-f5a3-428a-b22e-be4625441abf.png)
+![Screenshot (22)](https://user-images.githubusercontent.com/72678356/127143842-620952f1-a447-41f7-8d93-9ea583904cfb.png)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
